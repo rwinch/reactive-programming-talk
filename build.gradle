@@ -12,6 +12,10 @@ buildscript {
     }
 }
 
+plugins {
+    id "net.foragerr.jmeter" version "1.0.10-3.3"
+}
+
 group 'sample'
 version '1.0-SNAPSHOT'
 
