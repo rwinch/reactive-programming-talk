@@ -13,6 +13,9 @@ public class Main {
 		long SLEEP = TimeUnit.MINUTES.toMillis(1);
 		List<Thread> threads = new ArrayList<>();
 		for(int i = 0; i< NUM_THREADS; i++) {
+			if(i % 100 == 0) {
+				System.out.println("Created " + i + " threads");
+			}
 			Thread t = new Thread(() -> {
 				try {
 					Thread.sleep(SLEEP);
